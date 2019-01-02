@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<title>github request app</title>
 </head>
 <body>
+
+		<div class="container">
+		<h1>Github API Exercise</h1>
+
+		<form> 
+			<input type="text" name="text" id="username" placeholder="Search for a user" >
+			</input>
+
+			<input type="submit" value="Search">
+
+			<section class="hidden results">
+				<h2>Here are your results</h2>
+				<div id="results">
+					
+				</div>
+			</section>
+
+
+		</form>
+	</div>
+	 <script src="index.js"></script>
 
 </body>
 </html>
