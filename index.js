@@ -21,10 +21,13 @@ function displayResults(responseJson) {
 	if (error == "Not Found") {
 		$('#results').html(`Username not Found`)
 	} else {
-		$('#results').html(`${responseJson}`)
+		let myArray = responseJson;
+		for (var i=0; i < myArray.length; i++) {
+		$('#results').append(`<a href="${myArray[i].archive_url}">${myArray[i].name}</a><br>`)
+	}
 		$('.results').removeClass('hidden');
 	}
   
 }
-
+	
 submitForm();
